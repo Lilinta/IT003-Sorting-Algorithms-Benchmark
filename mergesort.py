@@ -1,5 +1,7 @@
+import numpy as np
+
 def mergesort(A, l, r):
-    if (l >= r): 
+    if l >= r:
         return
     m = l + (r-l)//2
     mergesort(A, l, m)
@@ -8,8 +10,8 @@ def mergesort(A, l, r):
     i = l
     j = m+1
     k = 0
-    while (i <= m or j <= r):
-        if (j > r or (i <= m and A[i] <= A[j])):
+    while i <= m or j <= r:
+        if j > r or (i <= m and A[i] <= A[j]):
             B[k] = A[i]
             i += 1
         else:
@@ -20,8 +22,7 @@ def mergesort(A, l, r):
         A[idx] = B[idx-l]
 
 if __name__ == "__main__":
-    A = list(map(int, input().split()))
-    n = len(A)
-    mergesort(A, 0, n-1)
-    for i in range(0, n):
+    A = np.array(list(map(int, input().split())))
+    mergesort(A, 0, len(A)-1)
+    for i in range(0, len(A)):
         print(A[i], end=" ")
