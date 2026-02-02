@@ -22,7 +22,7 @@ def mergesort(A, l, r):
         A[idx] = B[idx-l]
 
 if __name__ == "__main__":
-    A = np.array(list(map(int, input().split())))
+    A = list(map(int, input().split()))
     mergesort(A, 0, len(A)-1)
     for i in range(0, len(A)):
         print(A[i], end=" ")

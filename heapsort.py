@@ -23,7 +23,7 @@ def heapsort(A):
                 curr = right
 
 if __name__ == '__main__':
-    A = np.array(list(map(int, input().split())))
+    A = list(map(int, input().split()))
     heapsort(A)
     for i in range(0, len(A)):
         print(A[i], end=" ")
