@@ -15,11 +15,11 @@ if __name__ == '__main__':
     for num in range(1, 11):
         print("Running test", num)
         with open(os.path.join(os.path.dirname(__file__), "testcases/test" + str(num) + ".txt"), "r") as f:
-            if num == 1 or 3 <= num <= 6:
+            if 1 <= num <= 5:
                 inp = list(map(float, f.readline().split()))
-            if num == 2 or 7 <= num <= 10:
+            if 6 <= num <= 10:
                 inp = list(map(int, f.readline().split()))
-            A = inp.copy()
+            A = np.array(inp.copy())
             start_time = time.perf_counter()
             quicksort(A, 0, len(A)-1)
             end_time = time.perf_counter()
@@ -27,7 +27,7 @@ if __name__ == '__main__':
                 print("Quicksort failed")
                 exit(1)
             print("Quicksort took", end_time - start_time, "seconds")
-            A = inp.copy()
+            A = np.array(inp.copy())
             start_time = time.perf_counter()
             mergesort(A, 0, len(A)-1)
             end_time = time.perf_counter()
@@ -35,7 +35,7 @@ if __name__ == '__main__':
                 print("Mergesort failed")
                 exit(1)
             print("Mergesort took", end_time - start_time, "seconds")
-            A = inp.copy()
+            A = np.array(inp.copy())
             start_time = time.perf_counter()
             heapsort(A)
             end_time = time.perf_counter()
