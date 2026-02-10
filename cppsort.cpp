@@ -6,10 +6,11 @@ int A[N];
 double B[N];
 
 int main() {
+    cout << setprecision(3) << fixed;
     for (int num = 1; num <= 10; ++num) {
         cout << "Running test " << num << "\n";
         ifstream inp = ifstream(("testcases\\test" + to_string(num) + ".txt").c_str());
-        if (num == 1 || (3 <= num && num <= 6)) {
+        if (1 <= num && num <= 5) {
             for (int i = 0; i < N; ++i) {
                 inp >> B[i];
             }
@@ -32,23 +33,23 @@ int main() {
 }
 /*
 Running test 1
-Cppsort took 0.182447 seconds
+Cppsort took 0.056 seconds
 Running test 2
-Cppsort took 0.010141 seconds
+Cppsort took 0.049 seconds
 Running test 3
-Cppsort took 0.193314 seconds
+Cppsort took 0.165 seconds
 Running test 4
-Cppsort took 0.17626 seconds
+Cppsort took 0.233 seconds
 Running test 5
-Cppsort took 0.170007 seconds
+Cppsort took 0.179 seconds
 Running test 6
-Cppsort took 0.147433 seconds
+Cppsort took 0.105 seconds
 Running test 7
-Cppsort took 0.091037 seconds
+Cppsort took 0.112 seconds
 Running test 8
-Cppsort took 0.088141 seconds
+Cppsort took 0.112 seconds
 Running test 9
-Cppsort took 0.085416 seconds
+Cppsort took 0.108 seconds
 Running test 10
-Cppsort took 0.098085 seconds
+Cppsort took 0.120 seconds
 */
