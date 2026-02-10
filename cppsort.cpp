@@ -33,23 +33,23 @@ int main() {
 }
 /*
 Running test 1
-Cppsort took 0.056 seconds
+Cppsort took 0.058 seconds
 Running test 2
-Cppsort took 0.049 seconds
+Cppsort took 0.033 seconds
 Running test 3
-Cppsort took 0.165 seconds
-Running test 4
-Cppsort took 0.233 seconds
-Running test 5
 Cppsort took 0.179 seconds
+Running test 4
+Cppsort took 0.133 seconds
+Running test 5
+Cppsort took 0.145 seconds
 Running test 6
-Cppsort took 0.105 seconds
+Cppsort took 0.078 seconds
 Running test 7
-Cppsort took 0.112 seconds
+Cppsort took 0.081 seconds
 Running test 8
-Cppsort took 0.112 seconds
+Cppsort took 0.082 seconds
 Running test 9
-Cppsort took 0.108 seconds
+Cppsort took 0.091 seconds
 Running test 10
-Cppsort took 0.120 seconds
+Cppsort took 0.078 seconds
 */
